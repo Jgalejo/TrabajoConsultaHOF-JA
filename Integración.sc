@@ -18,35 +18,34 @@ R:  (a:Int,b:Int,f:Double => Double)
 integracion creada en el paso 1.
 */
 
-// Funciones anónimas asignadas a un valor que representan los f(x) de cada integral definida
 
-val funcion1 = (x:Double) => -Math.pow(x,2)+(8*x)-12
+val funcion1: Double => Double = (x:Double) => -Math.pow(x,2)+(8*x)-12
 
-val res1 = integración(3,5,funcion1)
+val res1: Double = integración(3,5,funcion1)
 
-val funcion2 = (x : Double) => 3*Math.pow(x,2)
+val funcion2: Double => Double = (x : Double) => 3*Math.pow(x,2)
 
-val res2 = integración(0,2,funcion2)
+val res2: Double = integración(0,2,funcion2)
 
-val funcion3 = (x : Double) => x+2*Math.pow(x,2)- Math.pow(x,3)+5*Math.pow(x,4)
+val funcion3: Double => Double = (x : Double) => x+2*Math.pow(x,2)- Math.pow(x,3)+5*Math.pow(x,4)
 
-val res3 = integración(-1,1,funcion3)
+val res3: Double = integración(-1,1,funcion3)
 
-val funcion4 = (x : Double) => ((2*x+1)/(Math.pow(x,2)+x))
+val funcion4: Double => Double = (x : Double) => ((2*x+1)/(Math.pow(x,2)+x))
 
-val res4 = integración(1,2,funcion4)
+val res4: Double = integración(1,2,funcion4)
 
-val funcion5 = (x : Double) => Math.pow(Math.E,x)
+val funcion5: Double => Double = (x : Double) => Math.pow(Math.E,x)
 
-val res5 =  integración(0,1,funcion5)
+val res5: Double =  integración(0,1,funcion5)
 
-val funcion6 = (x : Double) => (1/Math.sqrt(x-1))
+val funcion6: Double => Double = (x : Double) => (1/Math.sqrt(x-1))
 
-val res6 = integración(2,3,funcion6)
+val res6: Double = integración(2,3,funcion6)
 
-val funcion7 = (x : Double) => (1/(1+Math.pow(x,2)))
+val funcion7: Double => Double = (x : Double) => (1/(1+Math.pow(x,2)))
 
-val res7 =  integración(0,1,funcion7)
+val res7: Double =  integración(0,1,funcion7)
 
 /* Calcula el error que se presenta en cada aproximación. El error es igual al valor
 absoluto de la resta entre el valor esperado y el valor obtenido, así:
