@@ -18,6 +18,7 @@ R:  (a:Int,b:Int,f:Double => Double)
 integracion creada en el paso 1.
 */
 
+// Funciones anónimas asignadas a un valor que representan los f(x) de cada integral definida
 
 val funcion1 = (x:Double) => -Math.pow(x,2)+(8*x)-12
 
